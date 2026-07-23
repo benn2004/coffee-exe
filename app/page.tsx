@@ -517,7 +517,7 @@ function SceneEight() {
               <div className="flex justify-between items-center border-b border-gray-200 pb-3">
                 <span className="text-gray-500 text-sm">Date</span>
                 <span className="font-medium text-right flex flex-col">
-                  🗓️ Saturday, 25th July 2026 <span className="text-xs text-gray-400">at afternoon</span>
+                  🗓️ Weekend <span className="text-xs text-gray-400">at afternoon</span>
                 </span>
               </div>
 
