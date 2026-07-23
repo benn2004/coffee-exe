@@ -150,20 +150,21 @@ function SceneThree({ onComplete, onChangeBg }: { onComplete: () => void, onChan
     audioRef.current = new Audio('/ding.mp3');
 
     const sequence = async () => {
-      await new Promise(res => setTimeout(res, 1000)); setStep(1); 
-      await new Promise(res => setTimeout(res, 2000)); setStep(2); 
-      await new Promise(res => setTimeout(res, 800)); setStep(3); 
-      await new Promise(res => setTimeout(res, 800)); setStep(4); 
-      await new Promise(res => setTimeout(res, 2500)); 
-      
+      await new Promise(res => setTimeout(res, 1000)); setStep(1);
+      await new Promise(res => setTimeout(res, 2000)); setStep(2);
+      await new Promise(res => setTimeout(res, 800)); setStep(3);
+      await new Promise(res => setTimeout(res, 800)); setStep(4);
+      await new Promise(res => setTimeout(res, 800)); setStep(5);
+      await new Promise(res => setTimeout(res, 2500));
+
       if (audioRef.current) {
         audioRef.current.volume = 0.5;
         audioRef.current.play().catch(e => console.log("Audio play failed:", e));
       }
-      onChangeBg('#2A1B14'); 
-      setStep(5); 
+      onChangeBg('#2A1B14');
+      setStep(6);
 
-      await new Promise(res => setTimeout(res, 2000)); setStep(6); 
+      await new Promise(res => setTimeout(res, 2000)); setStep(7);
     };
     sequence();
   }, [onChangeBg]);
@@ -179,9 +180,10 @@ function SceneThree({ onComplete, onChangeBg }: { onComplete: () => void, onChan
         )}
         <div className="space-y-4 min-h-[120px] flex flex-col justify-center">
           <AnimatePresence>
-            {step >= 2 && step < 5 && <motion.div key="cand-1" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="text-red-500/50 font-mono">Unknown ps ❌</motion.div>}
-            {step >= 3 && step < 5 && <motion.div key="cand-2" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="text-red-500/50 font-mono">Jijaa ✔</motion.div>}
-            {step >= 4 && step < 5 && <motion.div key="cand-3" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="text-red-500/50 font-mono">...... ❌</motion.div>}
+            {step >= 2 && step < 6 && <motion.div key="cand-1" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="text-green-500/50 font-mono">Unknown ps </motion.div>}
+            {step >= 3 && step < 6 && <motion.div key="cand-2" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="text-green-500/50 font-mono">Jijaa </motion.div>}
+            {step >= 4 && step < 6 && <motion.div key="cand-3" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="text-green-500/50 font-mono">Budi </motion.div>}
+            {step >= 5 && step < 6 && <motion.div key="cand-4" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="text-green-500/50 font-mono">Njiyy </motion.div>}
           </AnimatePresence>
         </div>
         <AnimatePresence>
