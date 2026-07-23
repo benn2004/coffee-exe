@@ -180,10 +180,10 @@ function SceneThree({ onComplete, onChangeBg }: { onComplete: () => void, onChan
         )}
         <div className="space-y-4 min-h-[120px] flex flex-col justify-center">
           <AnimatePresence>
-            {step >= 2 && step < 6 && <motion.div key="cand-1" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="text-green-500/50 font-mono">Unknown ps </motion.div>}
+            {step >= 2 && step < 6 && <motion.div key="cand-1" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="text-green-500/50 font-mono">Unknown </motion.div>}
             {step >= 3 && step < 6 && <motion.div key="cand-2" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="text-green-500/50 font-mono">Jijaa </motion.div>}
-            {step >= 4 && step < 6 && <motion.div key="cand-3" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="text-green-500/50 font-mono">Budi </motion.div>}
-            {step >= 5 && step < 6 && <motion.div key="cand-4" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="text-green-500/50 font-mono">Njiyy </motion.div>}
+            {step >= 4 && step < 6 && <motion.div key="cand-3" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="text-green-500/50 font-mono">nothing </motion.div>}
+            {step >= 5 && step < 6 && <motion.div key="cand-4" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="text-green-500/50 font-mono">undefined </motion.div>}
           </AnimatePresence>
         </div>
         <AnimatePresence>
