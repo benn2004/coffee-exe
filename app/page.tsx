@@ -275,10 +275,10 @@ function Scene5({ onComplete, onChangeBg }: { onComplete: () => void, onChangeBg
 
     const sequence = async () => {
       await new Promise(res => setTimeout(res, 800)); setStep(1); // Hi, Jija.
-      await new Promise(res => setTimeout(res, 1800)); setStep(2); // Dashboard tadi...
-      await new Promise(res => setTimeout(res, 1800)); setStep(3); // sebenarnya cuma alasan...
-      await new Promise(res => setTimeout(res, 1800)); setStep(4); // biar kamu tetap scroll... 😂
-      await new Promise(res => setTimeout(res, 2000)); setStep(5); // Karena... aku lagi cari cara lebih seru buat ngajak ngopi ☕
+      await new Promise(res => setTimeout(res, 1500)); setStep(2); // Dashboard tadi...
+      await new Promise(res => setTimeout(res, 1500)); setStep(3); // sebenarnya cuma alasan...
+      await new Promise(res => setTimeout(res, 1500)); setStep(4); // biar kamu tetap scroll... 😂
+      await new Promise(res => setTimeout(res, 1800)); setStep(5); // Karena... aku lagi cari cara lebih seru buat ngajak ngopi ☕
       await new Promise(res => setTimeout(res, 1800)); setStep(6); // Tombol lanjut
     };
     sequence();
@@ -352,10 +352,10 @@ function SceneSix({ onComplete }: { onComplete: () => void }) {
     hasRun.current = true;
     const sequence = async () => {
       await new Promise(res => setTimeout(res, 800)); setStep(1); 
-      await new Promise(res => setTimeout(res, 1800)); setStep(2); 
-      await new Promise(res => setTimeout(res, 1800)); setStep(3); 
-      await new Promise(res => setTimeout(res, 1800)); setStep(4); 
-      await new Promise(res => setTimeout(res, 1800)); setStep(5); 
+      await new Promise(res => setTimeout(res, 1500)); setStep(2); 
+      await new Promise(res => setTimeout(res, 1500)); setStep(3); 
+      await new Promise(res => setTimeout(res, 1500)); setStep(4); 
+      await new Promise(res => setTimeout(res, 1500)); setStep(5); 
       await new Promise(res => setTimeout(res, 1500)); setStep(6); 
     };
     sequence();
